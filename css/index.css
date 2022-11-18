@@ -1,0 +1,80 @@
+body{
+    background-color: #08e8de;
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    padding: 20px 0;
+}
+.headerBox{
+    width: 1080px;
+    position: relative;
+    margin: 0 auto;
+}
+nav{
+    position: absolute;
+    top:110px;
+    right: 0;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #0000ff;
+    text-decoration: underline;
+}
+.calculations{
+    width: 1080px;
+    margin: 0 auto;
+    padding: 50px;
+}
+.calculations li{
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+.calculations li:hover{
+    border-color:#0000ff;
+}
+.calculations li:active{
+    border-color:#088c19;
+}
+.calculations h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.calculations li:hover h2{
+    font-size: 33px;
+}
+.calculations-description{
+    font-size: 18px;
+}
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top:10px;
+}
+footer{
+    text-align: center;
+    background: url(../imgs/networkingIMG2.jpg);
+    padding:40px;
+}
+.copyright{
+    color:#FFFFFF;
+    font-size: 13px;
+    margin:20px;
+}
+
