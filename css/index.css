@@ -27,7 +27,6 @@ a{
 }
 a:hover{
     color: #0000ff;
-    text-decoration: underline;
 }
 .headerBox{
     width: 1080px;
