@@ -19,6 +19,16 @@ p{
     font-weight: bold;
     padding-bottom: 20px;
 }
+a{
+    color: #000000;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+}
+a:hover{
+    color: #0000ff;
+    text-decoration: underline;
+}
 .headerBox{
     width: 1080px;
     position: relative;
