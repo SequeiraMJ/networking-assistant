@@ -25,14 +25,21 @@
         </div>
     </header>
     <img class="banner" src="../imgs/networkingIMG1.jpg">
-    <h2>FLSM</h2>
-    <p>Networking Assistant is a tool designed to help you in most repetitive calculations for network
-        professionals. It aims to make VLSM, FLSM, Binary ANDing and Numerical Base conversion as easy
-        as possible. You only need to type in information required in the to perform the calculation and Networking
-        Assistant will 
+    <h2>Fixed Length Network Mask</h2>
+    <p>To perform this calculation you only need to provide the IP address, network mask and number
+        of subnets do you need.
     </p>
     <main>
-
+        <section class="container">
+            <label for="ip">IP</label>
+            <input type="text" name="ipaddress" id="ip" placeholder="192.168.100.0">
+            <label for="mask">/</label>
+            <input type="text" name="netmask" id="mask" placeholder="24">
+            <label for="subnets">Subnets</label>
+            <input type="text" name="numofsubnets" id="subnets" placeholder="5">
+            <button id="calculate" class="btn-primary">Calculate</button>
+            <button id="clear" class="btn-secondary">Clear</button>
+        </section>
     </main>
     <footer>
         <img src="../imgs/logo.jpg" height="100px" width="100px">
