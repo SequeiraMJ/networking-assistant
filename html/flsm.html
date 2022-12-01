@@ -31,19 +31,37 @@
     </p>
     <main>
         <section class="container">
-            <label for="ip">IP</label>
-            <input type="text" name="ipaddress" id="ip" placeholder="192.168.100.0">
-            <label for="mask">/</label>
-            <input type="text" name="netmask" id="mask" placeholder="24">
-            <label for="subnets">Subnets</label>
-            <input type="text" name="numofsubnets" id="subnets" placeholder="5">
-            <button id="calculate" class="btn-primary">Calculate</button>
-            <button id="clear" class="btn-secondary">Clear</button>
+            <form name="formFLSM" id="formFLSM">
+                <label for="ip">IP</label>
+                <input type="text" name="ip" id="ip" placeholder="192.168.100.0">
+                <label for="mask">/</label>
+                <input type="number" name="mask" id="mask" placeholder="24">
+                <label for="subnets">Subnets</label>
+                <input type="number" name="subnets" id="subnets" placeholder="5">
+                <button id="calculate" class="btn-primary" type="button" onclick="executeFLSM()">Calculate</button>
+                <button id="clear" class="btn-secondary">Clear</button>
+            </form>
+            <table name="flsmTable" id="flsmTable">
+                <thead name="flsmTableHead" id="flsmTableHead">
+                    <tr>
+                        <th>Subnet</th>
+                        <th>Network</th>
+                        <th>First Usable</th>
+                        <th>Last Usable</th>
+                        <th>Broadcast</th>
+                        <th>Mask</th>
+                    </tr>
+                </thead>
+                <tbody name="flsmTableBody" id="flsmTableBody">
+                    <!-- JavaScript will insert table rows here -->
+                </tbody>
+            </table>
         </section>
     </main>
     <footer>
         <img src="../imgs/logo.jpg" height="100px" width="100px">
         <p class="copyright">&copy Copyright SequeiraMJ - 2022</p>
     </footer>
+    <script src="../js/flsm.js"></script>
 </body>
 </html>
