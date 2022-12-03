@@ -149,9 +149,6 @@ button:active{
     margin-bottom: 10px;
     display: block;
 }
-strong{
-    text-decoration: underline;
-}
 td, th{
 	padding: .7em;
 	margin: 0;
