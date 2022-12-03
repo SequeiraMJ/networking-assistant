@@ -25,18 +25,47 @@
         </div>
     </header>
     <img class="banner" src="../imgs/networkingIMG1.jpg">
-    <h2>VLSM</h2>
-    <p>Networking Assistant is a tool designed to help you in most repetitive calculations for network
-        professionals. It aims to make VLSM, FLSM, Binary ANDing and Numerical Base conversion as easy
-        as possible. You only need to type in information required in the to perform the calculation and Networking
-        Assistant will 
+    <h2>Variable Length Network Mask</h2>
+    <p>To perform VLSM subnetting, you only need to provide the initial IP address and required hosts per
+        subnet. Just click on <strong>"Add Input"</strong> to add as many form input fields as you need and
+        then click on <strong>"Calculate"</strong> to get the result. Remember, you have to enter host per
+        subnet from highest to lowest.
     </p>
     <main>
-
+        <section class="container">
+            <form name="formVLSM" id="formVLSM">
+                <label for="ip">IP</label>
+                <input type="text" name="ip" id="ip" placeholder="192.168.100.0">
+                <button id="addInput" type="button" onclick="executeAddInput()">Add Input</button>
+                <button id="calculate" type="button" onclick="executeVLSM()">Calculate</button>
+                <button id="clear">Clear</button>
+                <p>Host required per subnet:</p>
+                <input id="sub1" name="sub1" type="number" class="vlsmInput">
+                <!-- JavaScript will insert form input fields here -->
+            </form>
+            <table name="vlsmTable" id="vlsmTable">
+                <thead name="vlsmTableHead" id="vlsmTableHead">
+                    <tr>
+                        <th>Subnet</th>
+                        <th>Required</th>
+                        <th>Allocated</th>
+                        <th>Network</th>
+                        <th>First Host</th>
+                        <th>Last Host</th>
+                        <th>Broadcast</th>
+                        <th>Mask</th>
+                    </tr>
+                </thead>
+                <tbody name="vlsmTableBody" id="vlsmTableBody">
+                    <!-- JavaScript will insert table rows here -->
+                </tbody>
+            </table>
+        </section>
     </main>
     <footer>
         <img src="../imgs/logo.jpg" height="100px" width="100px">
         <p class="copyright">&copy Copyright SequeiraMJ - 2022</p>
     </footer>
+    <script src="../js/vlsm.js"></script>
 </body>
 </html>
